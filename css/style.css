@@ -1,3 +1,4 @@
+/* reset do css */
 * {
 	margin: 0;
 	padding: 0;
@@ -5,5 +6,8 @@
 }
 
 body {
-	font-family: Tahoma;
+	background-image: url('../img/fundo.png');
+	background-size: auto 100vh;
+	height: 100vh;
+	font-family: Tahoma, sans-serif;
 }
