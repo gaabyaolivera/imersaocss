@@ -4,12 +4,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* se a tela tiver pelo menos 400px vai carregar estes estilos
-@media (min-width: 400px){
-	body {
-		font-size: 14px;
-	}
-}*/
 body {
 	background-size: auto 100vh;
 	height: 100vh;
@@ -45,12 +39,12 @@ header {
 .menu a {
 	padding: 20px;
 	display: block;
+	transition: background-color 1s, color 1s;
 }
 .menu a:hover {
+	background-color: white;
+	color: black;
 	text-decoration: underline;
-}
-.header-background {
-	
 }
 .titulo {
 	font-size: 3em;
@@ -61,23 +55,28 @@ header {
 .portifolio {
 	padding: 2em;
 	height: 100vh;
-	background-color: #fff;
+	background-color: #262626;
 }
 .nome-portfolio {
 	text-align: center;
 }
 .portifolio h2{
 	font-size: 2em;
-	color: #000;
+	color: #fff;
 	margin-bottom: 30px;
 }
 .portifolio figure {
 	text-align: center;
+	color: #fff;
 }
 .img-portfolio {
 	height: 200px;
 	width: 340px;
 	object-fit: cover;
+	transition: transform 500ms;
+}
+.img-portfolio:hover {
+	transform: scale(1.2);
 }
 .grid {
 	display: grid;
@@ -87,15 +86,37 @@ header {
 }
 .contato {
 	text-align: center;
-	height: 100vh;
+	height: 40vh;
+	background-color: #F98080;
+	color: #fff;
+	padding: 2em;
+	display: flex;
+	justify-content: center;
+	
+}
+.nome-contato {
+	text-align: center;
+	background-color: #F98080;
+	color: #fff;
+	padding: 2em;
+	font-size: 2em;
+}
+.contato a {
+	color: whitesmoke;
+	padding: 15px;
+	transition: text-shadow 1s;
+}
+.contato a:hover {
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 .sobre {
 	text-align: center;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 2em;
+	background-color: #F98080;
 }
 .sobre-texto {
 	width: 500px;
