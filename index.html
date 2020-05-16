@@ -3,15 +3,36 @@
 <html lang="pt-br">
 <head>	
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gabriella Oliveira</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<h1>Gabriella Oliveira</h1> 	
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Portifólio</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+		<div class="header-titulo">
+			<h1 class="titulo">Gabriella Oliveira</h1>
+			<!--<h2 class="sub-titulo">Front-End Developer</h2>-->
+		</div>
 	</header>
-	<section>
-	  	<h2>Portfólio</h2>
+
+	<section class="sobre">
+		<figure>
+			<img class="img-port" src="img/eu.png" alt="Gabriella">
+		</figure>
+		<p class="sobre-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident iure fugiat voluptatem quidem porro quisquam minima maxime eaque ad distinctio quae nulla accusantium ab aliquid iusto atque, laboriosam tempore mollitia magnam velit nisi ducimus. Doloremque aperiam, dolore quasi iure a asperiores eum! Magni nobis recusandae sint! Atque tempora illum neque!</p>
+	</section>
+
+	<section class="portifolio">
+		  <h2 class="nome-portfolio">Portifólio</h2>
+		  <div class="grid">
 	  	<figure>
 	    		<img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
 	    		<figcaption>eCommerce</figcaption>
@@ -27,10 +48,14 @@
 	  	<figure>
 	    		<img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
 	    		<figcaption>Projetos pessoais</figcaption>
-	  	</figure>
+		  </figure>
+		</div>
 </section>
+		<section class="contato">
+			<h2>Contato</h2>
+
+		</section>
+
 </body>
 
 </html>
-
-
