@@ -4,10 +4,107 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+/* se a tela tiver pelo menos 400px vai carregar estes estilos
+@media (min-width: 400px){
+	body {
+		font-size: 14px;
+	}
+}*/
 body {
-	background-image: url('img/fundo.png');
 	background-size: auto 100vh;
 	height: 100vh;
-	font-family: Tahoma, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 18px;
+}
+header {
+	display: flex;
+	height: 100vh;
+	text-align: center;
+	color: #000;
+	justify-content: center;
+	align-items: center;
+	background: url('../img/computer2.png') no-repeat center center/auto;
+}
+.menu {
+	background-color: rgba(0, 0, 0, 0.2);
+	position: fixed;
+	width: 100vw;
+	top: 0; /*o top 0 fixa o nav no topo e só pode ser usado pq declaramos uma position*/
+}
+.menu ul li {
+	display: flex;
+}
+.menu ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+.menu ul {
+	display: flex;
+	justify-content: end;
+}
+.menu a {
+	padding: 20px;
+	display: block;
+}
+.menu a:hover {
+	text-decoration: underline;
+}
+.header-background {
+	
+}
+.titulo {
+	font-size: 3em;
+}
+.sub-titulo {
+	font-size: 2em;
+}
+.portifolio {
+	padding: 2em;
+	height: 100vh;
+	background-color: #fff;
+}
+.nome-portfolio {
+	text-align: center;
+}
+.portifolio h2{
+	font-size: 2em;
+	color: #000;
+	margin-bottom: 30px;
+}
+.portifolio figure {
+	text-align: center;
+}
+.img-portfolio {
+	height: 200px;
+	width: 340px;
+	object-fit: cover;
+}
+.grid {
+	display: grid;
+	gap: 1em;
+	grid-template-columns: repeat(2, 440px);
+	justify-content: center;
+}
+.contato {
+	text-align: center;
+	height: 100vh;
+}
+.sobre {
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+}
+.sobre-texto {
+	width: 500px;
+	margin-left: 20px;
+	text-align: justify;
+}
+.img-port {
+	width: 300px;
+	height: 240px;
+	object-fit: cover;
+	border-radius: 50%;
 }
